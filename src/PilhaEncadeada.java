@@ -1,10 +1,10 @@
 
-public class PilhaNo<Elemento> implements Pilha<Elemento> {
+public class PilhaEncadeada<Elemento> implements Pilha<Elemento> {
 	private No<Elemento> topo;
 	private int tamanho;
 	
 	
-	public PilhaNo() {
+	public PilhaEncadeada() {
 		topo = null;
 		tamanho = 0;
 	}
