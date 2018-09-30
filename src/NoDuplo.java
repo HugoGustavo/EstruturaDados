@@ -1,5 +1,5 @@
 
-public class NoDuplo<Elemento> {
+public class NoDuplo<Elemento> implements Posicao<Elemento> {
 	private Elemento elemento;
 	private NoDuplo<Elemento> anterior, proximo;
 	
@@ -26,6 +26,11 @@ public class NoDuplo<Elemento> {
 	}
 	public void setProximo(NoDuplo<Elemento> proximo) {
 		this.proximo = proximo;
+	}
+
+	@Override
+	public Elemento get() {
+		return getElemento();
 	}
 
 }
